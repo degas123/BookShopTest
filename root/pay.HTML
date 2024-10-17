@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay</title>
+    <link rel="stylesheet" href="../root/CSS/Style.CSS">
+    <script src="../root/javescript/JS.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <img src="../root/images/logo.png" alt="Logo"></img>
+            <div class="title">
+                <h1>My Bookshop</h1>
+            </div>
+            <div class="dropDown">
+                <button>☰</button>
+                <div class="dropDown-options">
+                    <a href="../root/index.HTML" title="HomePage">Home</a>
+                    <a href="#" title="About US page">About Us</a>
+                    <a href="mailto:jthorpe112@yahoo.com" title="Email">Contact Us</a>
+                </div>
+            </div>
+            <a class="buttonTop" href="../root/index.HTML" title="HomePage">Home</a>
+            <a class="buttonTop" href="#" title="About US page">About Us</a>
+            <a class="buttonTop" href="mailto:jthorpe112@yahoo.com" title="Email">Contact Us</a>
+        </div>
+
+    </header>
+
+
+    <form>
+
+
+        <div class="cardInfo">
+            <h3 class="title">Payment Options</h3>
+            <hr>
+
+            <div>
+                <h2>
+                    Cards Accepted:
+                </h2>
+                <img src="../root/images/cards.png" alt="credit/debit card image">
+            </div>
+
+            <div class="inputBox">
+                <label for="cardNum">
+                    Credit Card Number:
+                </label>
+                <input type="text" id="cardNum" placeholder="1111-2222-3333-4444" required>
+            </div>
+
+            <div class="inputBox">
+                <label for="year">Expiration Date:</label>
+                <br>
+                <select id="month">
+                    <option value="">Choose month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select id="year">
+                    <option value="">Choose Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                </select>
+                <br>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="1234" required>
+
+            </div>
+            <input type="submit" value="Continue" class="submitBtn" id="submit" title="Continue to payment">
+        </div>
+    </form>
+
+</body>
+<footer>
+    <div>
+        Copyright james thorpe@ Manchester metrapoliten university
+    </div>
+
+</footer>
+
+</html>

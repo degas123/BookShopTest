@@ -1,0 +1,278 @@
+.flex-container {
+   display: flex;
+   background-color: #88880050;
+   border-bottom: 1px solid #555;
+   justify-content: space-evenly;
+
+}
+
+
+.flex-container>div {
+   font-size: 20px;
+}
+
+
+.flex-container>.buttonTop {
+   color: #000;
+   font-family: 'Irish Grover', cursive;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 10px;
+   border: solid #191A19 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   background: #88880050;
+}
+
+
+.flex-container>.buttonTop:hover {
+   background:#fbfb0250;
+   color:black;
+}
+
+
+.toggle {
+   display: none;
+}
+
+
+* {
+   padding: 0;
+   margin: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: arial, tahoma;
+   list-style: none;
+   /*    outline: 1px solid brown;*/
+}
+
+body {
+   background-color: #88880050;
+   min-width: 290px;
+}
+
+.book {
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   margin: 5px;
+}
+
+#bookBlock {
+   border: 1px solid black;
+   /* height: 23rem;
+   width: 28rem; */
+}
+
+button {
+   border: none;
+   border-radius: 5px;
+   padding: 15px 30px;
+   font-size: 18px;
+   cursor: pointer;
+   background: #88880050;
+   border: 1px solid #000;
+}
+
+button:hover {
+   background-color: #ddd;
+}
+
+.button {
+   border-radius: 20px;
+   color: #ef0808;
+   font-family: 'Irish Grover', cursive;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 10px;
+   border: solid #191A19 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin-left: 10vw;
+   background: #88880050;
+}
+
+.button:hover {
+   background:#fbfb0250;
+   color: #ef0808;
+}
+
+.dropDown {
+   display: none;
+}
+
+footer{
+   max-width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5vh;
+   font-size: 1.5vw;
+
+}
+
+h1 {
+   font-family: 'Irish Grover', cursive;
+   font-size: 150%;
+   text-decoration: underline;
+}
+
+
+#image {
+   float: left;
+   width: 20vw;
+}
+
+.txt {
+   color: #000;
+   font-family: 'Irish Grover', cursive;
+   float: right;
+   width: 28vw;
+   padding: 10px;
+   font-size: 1.5vw;
+}
+
+.payment {
+   text-align: center;
+}
+
+.cardInfo {
+   max-width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top:50px;
+   border: #000 solid 5px;
+   background: white;
+}
+
+.inputBox {
+   padding: 5% 10% 0% 10%;
+}
+
+.successNum {
+   max-width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 1.5vw;
+   font-style: bold;
+   min-width: 200px;
+}
+
+.successNumRed {
+   max-width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 1.5vw;
+   font-style: bold;
+   color: red;
+   min-width: 200px;
+
+}
+
+.submitBtn {
+   padding: 5px;
+   background-color: crimson;
+   margin: 5%;
+}
+
+@media (max-width: 900px) {
+
+   .button {
+      margin-right: 10.5vw;
+   }
+
+   .dropDown {
+      display: inline-block;
+      position: relative;
+   }
+
+   .dropDown-options {
+      display: none;
+      position: absolute;
+      overflow: auto;
+      background-color: #fff;
+      border-radius: 5px;
+      margin-left: -38px;
+   }
+
+   .dropDown:hover .dropDown-options {
+      display: flex;
+      flex-direction: column;
+
+   }
+
+   .dropDown-options a {
+      display: block;
+      color: #000000;
+      padding: 5px;
+      text-decoration: none;
+      padding: 20px 40px;
+   }
+
+   .dropDown-options a:hover {
+      color: #0a0a23;
+      border-radius: 5px;
+      background: #88880050;
+   }
+
+   .toggle {
+      display: flex;
+      float: right;
+      margin-left: 10px;
+      margin-top: 10px;
+   }
+
+   .flex-container>.buttonTop {
+      display: none;
+   }
+
+   .book {
+      flex-direction: column;
+      align-items: center;
+
+   }
+
+   .txt {
+      margin-right: 1%;
+      width: 50vw;
+      padding: 10px;
+      font-size: 3.0vw;
+   }
+
+
+   .successNum {
+      max-width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 3vw;
+      font-style: bold;
+      min-width: 200px;
+   }
+   
+   .successNumRed {
+      max-width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 3vw;
+      font-style: bold;
+      color: red;
+      min-width: 200px;
+   }
+
+   #bookBlock {
+      width: 98%;
+      padding: 1rem;
+      margin: 5px;
+   }
+
+   #image {
+      float: left;
+      width: 40%;
+      max-width: 280px;
+   }
+}
